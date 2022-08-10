@@ -1,69 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
     <h1>Years to Days:</h1>
     <span class="form-group">
-    <label class="form-control" for="year">AGE in Year:</label>
-    <input class="form-control" placeholder="Age here.." type="text" id="year" onchange="today();" placeholder  = "Enter your age:">
-    <h4 id="today"></h4>
+      <label class="form-control" for="year">AGE in Year:</label>
+      <input
+        class="form-control"
+        placeholder="Age here.."
+        type="text"
+        id="year"
+        onchange="today();"
+        placeholder="Enter your age:"
+      />
+      <h4 id="today"></h4>
+    </span>
+    <hr />
+    <br /><br />
+    <h1>Hours to seconds:</h1>
+    <span class="form-group">
+      <label class="form-control" for="hours">HOURS to seconds:</label>
+      <input
+        class="form-control"
+        placeholder="Hours here.."
+        type="text"
+        id="hours"
+        onchange="toseconds();"
+        placeholder="Enter your age:"
+      />
+      <h4 id="toseconds"></h4>
+    </span>
+    <hr />
+    <br /><br />
+    <h1>Next number</h1>
+    <span class="form-group">
+      <label class="form-control" for="number">Enter Number :</label>
+      <input
+        class="form-control"
+        placeholder="Number here.."
+        type="number"
+        id="num"
+        onchange="nxtnum();"
+        placeholder="Enter your age:"
+      />
+      <h4 id="nxtnum"></h4>
+    </span>
+    <hr />
+    <br /><br />
+    <h1>Random Array</h1>
+    <span class="form-group">
+      <label class="form-control" for="number"
+        >Add number of objects for array :</label
+      >
+      <input
+        class="form-control"
+        placeholder="Array no here.."
+        type="number"
+        min="1"
+        max="100"
+        id="num1"
+        onchange="arr();"
+        placeholder="Enter your age:"
+      />
+      <p id="arr"></p>
+      <h4 id="array"></h4>
+    </span>
+    <hr />
+    <br /><br />
+    <h1>Read more read less</h1>
+    <span>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span
+          id="dots"
+          >...</span
+        ><span id="more"
+          >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+          congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+          ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+          vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+          non fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+        >
+      </p>
 
-</span>
-<hr><br><br>
-<h1>Hours to seconds:</h1>
-<span class="form-group">
-    <label class="form-control" for="hours">HOURS to seconds:</label>
-    <input class="form-control" placeholder="Age here.." type="text" id="hours" onchange="toseconds();" placeholder  = "Enter your age:">
-    <h4 id="toseconds"></h4>
-    
-</span>
-<hr><br><br>
-<h1>Next number</h1>
-<span class="form-group">
-    <label class="form-control" for="number">Enter Number :</label>
-    <input class="form-control" placeholder="Age here.." type="text" id="num" onchange="nxtnum();" placeholder  = "Enter your age:">
-    <h4 id="nxtnum"></h4>
-    
-</span>
-<hr><br><br>
-<h1>Random Array</h1>
-<span class="form-group">
-    <label class="form-control" for="number">Add number of objects for array :</label>
-    <input class="form-control" placeholder="Age here.." type="number" min="1" max="100" id="num1" onchange="arr();" placeholder  = "Enter your age:">
-    <h4 id="array"></h4>
-    
-</span>
-<hr><br><br>
-<h1>Read more read less</h1>
-<span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
-         Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myFunction()" class="btn-dark" id="myBtn">
+        Read more
+      </button>
+    </span>
+    <hr />
+    <br /><br />
+    <div class="ticker-wrapper-h">
+      <div class="heading">Trending Now</div>
 
-    <button onclick="myFunction()" class="btn-dark"id="myBtn">Read more</button>
-
-</span>
-<hr><br><br>
-<div class="ticker-wrapper-h">
-	<div class="heading">Trending Now</div>
-	
-	<ul class="news-ticker-h">
-		<li><a href="">What is Lorem Ipsum?</a></li>
-		<li><a href="">Why do we use it?</a></li>
-		<li><a href="">Where does it come from?</a></li>
-		<li><a href="">Where can I get some?</a></li>
-	</ul>
-</div>
-<hr>
-
-
-
-</body>
+      <ul class="news-ticker-h">
+        <li>
+          <a href="">Head of ARY News Ammad Yousaf arrested from Karachi...</a>
+        </li>
+        <li>
+          <a href="">CCTV footage of Shahbaz Gill’s arrest surfaces...</a>
+        </li>
+        <li>
+          <a href=""
+            >Rana Sanaullah levels serious allegations against ARY News...</a
+          >
+        </li>
+        <li>
+          <a href=""
+            >Over 76 cops deputed for Imran Khan’s security: Islamabad...</a
+          >
+        </li>
+      </ul>
+    </div>
+    <hr />
+  </body>
 </html>
