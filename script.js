@@ -32,10 +32,12 @@ function nxtnum() {
     document.getElementById("nxtnum").innerHTML = "Please enter Numeric value";
   } else if (num.includes(".") && !isNaN(num)) {
     num = parseFloat(num);
+    
     nxtnum = num + 0.1;
+    
     console.log("float");
     document.getElementById("nxtnum").innerHTML =
-      "This is the next number:" + nxtnum;
+      "This is the next number:" + nxtnum.toFixed(1);
   } else {
     nxtnum = parseInt(num) + 1;
     document.getElementById("nxtnum").innerHTML =
@@ -90,14 +92,4 @@ function generateString(length) {
 
   return result;
 }
-function isFloat(value) {
-  if (
-    typeof value === "number" &&
-    !Number.isNaN(value) &&
-    !Number.isInteger(value)
-  ) {
-    return true;
-  }
 
-  return false;
-}
