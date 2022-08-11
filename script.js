@@ -35,7 +35,7 @@ function nxtnum() {
     
     nxtnum = num + 0.1;
     
-    console.log("float");
+    //console.log("float");
     document.getElementById("nxtnum").innerHTML =
       "This is the next number:" + nxtnum.toFixed(1);
   } else {
